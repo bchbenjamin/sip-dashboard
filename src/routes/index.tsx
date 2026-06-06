@@ -120,8 +120,7 @@ function HomePage() {
               <span>
                 <span className="text-ember">●</span> system_status: prototype_phase_2
               </span>
-              <span>build: 24EDAI127</span>
-              <span>group: O</span>
+              <span>build: 24UTAI13</span>
               <span>institution: atria.edu</span>
             </div>
           </Reveal>
@@ -192,7 +191,7 @@ function HomePage() {
                 <span>read_only</span>
               </div>
               <pre className="overflow-x-auto p-6 text-xs leading-relaxed text-fog md:text-sm">
-{`[ LAYER 1: SENSOR ARRAY ]
+                {`[ LAYER 1: SENSOR ARRAY ]
   ├── HD/4K Night-Vision Cam (CSI)
   ├── MLX90640 Thermal (I2C, 110° FoV)
   └── PIR Motion (low-power wake)

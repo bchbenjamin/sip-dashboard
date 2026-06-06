@@ -1,53 +1,31 @@
-const team = [
-  { name: "B C H Benjamin", role: "Team Lead · CSE" },
-  { name: "Saniya J", role: "CSE" },
-  { name: "Chetan S", role: "ECE" },
-  { name: "Aydin Hasan K S", role: "ECE" },
-  { name: "Chandan B D", role: "ECE" },
-];
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
     <footer className="mt-32 border-t border-iron bg-void">
       <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
           <div>
             <p className="text-xs uppercase tracking-widest text-steel">
               &gt; project
             </p>
             <p className="mt-3 text-paper">AI-Powered Street Safety Device Network</p>
             <p className="mt-1 text-xs text-ash">
-              ASIP_127 / 24EDAI127 · Group O · TechXAtria 2026
+              ASIP_127 / 24UTAI13
             </p>
           </div>
-          <div>
-            <p className="text-xs uppercase tracking-widest text-steel">
-              &gt; institution
-            </p>
-            <p className="mt-3 text-paper">Atria Institute of Technology</p>
-            <p className="mt-1 text-xs text-ash">
-              An Autonomous Institution, Bengaluru — 560024
-            </p>
-            <p className="mt-3 text-xs text-ash">
-              Faculty Guide: Dr. Raghunandan G H · Associate Dean, CDC
-            </p>
-          </div>
-          <div>
-            <p className="text-xs uppercase tracking-widest text-steel">
-              &gt; team
-            </p>
-            <ul className="mt-3 space-y-1 text-sm">
-              {team.map((m) => (
-                <li key={m.name} className="flex justify-between gap-4">
-                  <span className="text-paper">{m.name}</span>
-                  <span className="text-ash">{m.role}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="flex items-center">
+            <Link
+              to="/team"
+              className="inline-flex items-center justify-between gap-4 border border-iron bg-carbon px-6 py-3 text-sm text-paper transition-colors hover:border-paper"
+            >
+              <span>[ VIEW TEAM & INSTITUTE DETAILS ]</span>
+              <span className="text-ember">→</span>
+            </Link>
           </div>
         </div>
         <div className="mt-10 flex flex-col items-start justify-between gap-2 border-t border-iron pt-6 text-xs text-steel sm:flex-row">
-          <span>© 2026 · Group O · All rights reserved.</span>
+          <span>© 2026 · AI-Powered Street Safety Device Network · All rights reserved.</span>
           <span>
             <span className="text-ember">●</span> system_status: prototype_phase_2
           </span>

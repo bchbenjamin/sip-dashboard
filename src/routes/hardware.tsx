@@ -8,6 +8,7 @@ import {
   Radio,
   Battery,
   Network,
+  ArrowUpRight,
 } from "lucide-react";
 import { PageTransition, Reveal, TerminalLabel } from "../components/PageTransition";
 
@@ -170,6 +171,17 @@ function HardwarePage() {
               repairability. Every part below is evaluated against documented
               alternatives in CONTEXT §9.
             </p>
+            <div className="mt-8">
+              <a
+                href="https://sip-video.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-between gap-4 border border-ember bg-ember px-6 py-3 text-sm font-bold text-void transition-all hover:bg-paper hover:border-paper"
+              >
+                <span>[ VIEW HARDWARE VISUALIZATION ]</span>
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>
